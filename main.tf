@@ -18,7 +18,7 @@ resource "google_compute_instance" "vm-instance" {
   }
   
   provisioner "local-exec" {
-    command = "gcloud compute instances delete hello --zone us-central1-a"
+    command = "gcloud compute instances create hello --zone us-central1-a"
   }
 
    
